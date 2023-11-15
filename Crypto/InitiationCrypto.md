@@ -2,19 +2,34 @@
 
 ### 1. Générer et partager une clé de chiffrement AES256 ainsi que les IV avec le destinataire 
 
-![alt tag](https://github.com/Zennael/AIS/blob/main/Cryptographie/screenshot/Aspose.Words.cfe49b3c-5329-4db8-b9eb-d08292603854.002.png)
+Clé = $aes 54 255 244 56 40 221 51 119 93 133 48 173 193 160 50 229 206 226 28 101 173 237 227 217 150 254 182 16 101 122 40 201
+
+IV = $iv 15 253 253 17 62 164 120 152 74 170 58 60 68 116 130 47
 
 ### 2. Comment générer une clé de chiffrement de manière sure ? Quel est le risque si les IV sont toujours les mêmes ? 
 
-Pour générer une clé de chiffrement sécurisée, il faut utilisez un générateur de nombres aléatoires cryptographiquement sûr, choisir une longueur de clé appropriée et la stockez de manière sécurisée. Les IV (Initialization Vectors) doivent être aléatoires et uniques pour chaque opération de chiffrement afin d'éviter les risques liés à la répétition des IV, ce qui pourrait compromettre la sécurité du chiffrement. 
+La ligne du script disponible sur Dojo 101 : [Security.Cryptography.RNGCryptoServiceProvider] 
+Permet une clé de chiffrement aléatoire qui contibue a générer une clé sûre
+
+Si les IV sont identiques, le risque et que si l’attaquant intercepte et déchiffre les IVs, cela lui permettra de décrypter les messages ou de déchiffrer les informations. 
+
+
 
 ### 3. Chiffrer un message et l’envoyer 
 
-![alt tag](https://github.com/Zennael/AIS/blob/main/Cryptographie/screenshot/Aspose.Words.cfe49b3c-5329-4db8-b9eb-d08292603854.003.png)
+Avec les IVs et la clé précédente le message suivant : 
+
+D88F0C3DA8C43F8B457D665D7FACD8E1B75FEDDD3DA3A799435F7E97B739D182EE73A97AA26ED835DA9D8DD231DBC3A7383B7A74C0D3E28F7D952DCBB8807BC0DBEE36787A32B3CA388D0ED83B4A7B043FDDD6BE7A4C63A781AE1E04620BF659B58BB5DD30495E18AEEE6EA723513CE45BF4193E60B1FA92CA18B2B57523FF780A8E501C549FBE89A23B507DB6EA44CD9EAAE9B714B8A89C7CC6995C57F405B0B07374FA5FECFA5700FBA0338EC9CEAADA09A74970F8CE808A556CD75B3C572F1447BE4B0F7A6D78B9DD3EFE2785A7B40A7891646F4FEE696EA334103468A3A68B71F033CD451496F5A7A82B2CF33F42CCF486B21FA3BC005FE711C2CD30EC88
+
 
 ### 4. Recevoir et déchiffrer le message 
 
-![alt tag](https://github.com/Zennael/AIS/blob/main/Cryptographie/screenshot/Aspose.Words.cfe49b3c-5329-4db8-b9eb-d08292603854.004.png)
+C822DAA500808D8603C6F5EF411D73036851B54CF90468BDF989DC3D0E7285E4
+
+Le message de benjamin avec les IVs et la clé : Le saucisson c’est bon …
+
+
+
 
 ### 5. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Ajouter cette fonctionnalité à l'aide d'un script ou d'un outil en CLI. 
 
