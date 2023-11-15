@@ -1,5 +1,13 @@
 # ***Introduction à la cryptographie***
 
+Les liens pour les réponses fournies à ce TP:
+
+Dojo-101/Dojo-101-DevSec/Crypto-basics.md at main · Aif4thah/Dojo-101 · GitHub
+
+https://www.cnil.fr/fr/comprendre-les-grands-principes-de-la-cryptologie-et-du-chiffrement
+
+
+
 ### 1. Générer et partager une clé de chiffrement AES256 ainsi que les IV avec le destinataire 
 
 Clé = $aes 54 255 244 56 40 221 51 119 93 133 48 173 193 160 50 229 206 226 28 101 173 237 227 217 150 254 182 16 101 122 40 201
