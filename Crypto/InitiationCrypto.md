@@ -1,6 +1,6 @@
 # ***Introduction à la cryptographie***
 
-Les liens pour les réponses fournies à ce TP:
+Les liens utiles pour les réponses fournies à ce TP:
 
 [Dojo-101/Dojo-101-DevSec/Crypto-basics.md at main · Aif4thah/Dojo-101 · GitHub](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Crypto-basics.md)
 
