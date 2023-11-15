@@ -153,10 +153,6 @@ print("Message déchiffré:", dechiffre(message_chiffre, private_key))
 input("Appuyez sur Entrée pour quitter...")
 ````
 
-Un petit rendu des scripts:
-
-![alt tag](https://github.com/Zennael/AIS/blob/main/Cryptographie/screenshot/Aspose.Words.cfe49b3c-5329-4db8-b9eb-d08292603854.005.jpeg)
-
 ### 6. Reprendre la question 4 avec un algorithme post quantique
 
 ````python
