@@ -28,7 +28,7 @@ C822DAA500808D8603C6F5EF411D73036851B54CF90468BDF989DC3D0E7285E4
 
 Le message de benjamin avec les IVs et la clé : Le saucisson c’est bon …
 
-
+![alt tag]https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Crypto/Screenshots/imaage.png
 
 
 ### 5. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Ajouter cette fonctionnalité à l'aide d'un script ou d'un outil en CLI. 
