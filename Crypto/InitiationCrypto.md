@@ -41,9 +41,9 @@ Le message de benjamin avec les IVs et la clé : Le saucisson c’est bon …
 
 ### 5. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Ajouter cette fonctionnalité à l'aide d'un script ou d'un outil en CLI. 
 
-J’utilise des clés de chiffrement asymétrique et un calcul de hash
-
-https://www.cnil.fr/fr/comprendre-les-grands-principes-de-la-cryptologie-et-du-chiffrement 
+La réponse à la première partie de la question est détaillée dans : https://www.cnil.fr/fr/comprendre-les-grands-principes-de-la-cryptologie-et-du-chiffrement 
+ 	
+A la rubrique : Pour assurer l’authenticité du message : la signature
 
 
 ### script de cryptage en python
