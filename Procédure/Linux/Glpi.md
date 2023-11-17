@@ -51,7 +51,7 @@ apt install apache2
 
   ````
 
-  #### c) Installation de MariaDB
+#### c) Installation de MariaDB
 
 ````
   apt install mariadb-server
