@@ -184,4 +184,4 @@ rm -f /var/www/html/glpi/install/install.php
 
 Une fois le fichier supprimer vous pouvez personnaliser tous les utilisteurs, **surtout le superadmin** 
 
-**GLPI est maintenant fonctionnel, installé et configurer avec sa base de données**
+**GLPI est maintenant fonctionnel, installé et configuré avec sa base de données**
