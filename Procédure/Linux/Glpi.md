@@ -10,7 +10,7 @@ Prérequis :
 - Une machine Debian 12 / Ip static 
 - La machine a accès à Internet
 
-**Toute les commandes sont entrées soient directement avec la cession root soit avec une cession disposant des droits d'administrateur**
+**Toutes les commandes sont entrées soient directement avec la session root soit avec une cession disposant des droits d'administrateur**
 
 
 ### 1. Mise à jour des paquets Debian
@@ -57,7 +57,7 @@ apt install apache2
   apt install mariadb-server
   mysql_secure_installation
 ````
-**Après cette commande vous créer votre mot de passe, vous pouver ensuite faire entrer (excepter la demande de changement de mot de passe) jusqu'à la fin**
+**Après cette commande vous créez votre mot de passe, vous pouvez ensuite faire entrer (excepter la demande de changement de mot de passe) jusqu'à la fin**
 
 
 ### 3. Création de la base de données « GLPI »
@@ -68,7 +68,7 @@ On va connecter MariaDB et créer la base de données.
 mysql -u root -p
  ````
 
-Nous sommes connecté sur MariaDB on va ensuite créer la base de données : 
+Nous sommes connectés sur MariaDB on va ensuite créer la base de données : 
 
 ````
 
