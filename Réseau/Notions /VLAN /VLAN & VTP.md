@@ -8,7 +8,7 @@ Un VLAN (Virtual Local Area Network) est une technologie utilisée pour segmente
 **Fonctionnement**:
 - **Segmentation**: Les VLANs permettent de diviser un réseau en plusieurs sous-réseaux logiques. Chaque VLAN est un domaine de diffusion distinct.
 - **Isolation**: Les dispositifs dans un VLAN ne peuvent pas communiquer directement avec des dispositifs dans un autre VLAN sans un routeur ou un dispositif de couche 3.
-- **Identification**: Les trames Ethernet sont marquées avec un identifiant de VLAN (VLAN ID) dans le champ Tag du protocole 802.1Q. Cela permet aux switches de savoir à quel VLAN chaque trame appartient.
+- **Identification**: Les trames Ethernet sont marquées avec un identifiant de VLAN (VLAN ID) dans le champ Tag du protocole 802.1Q (dot1q). Cela permet aux switches de savoir à quel VLAN chaque trame appartient.
 - **Avantages**:
   - **Sécurité**: Limite les points de diffusion des données, réduisant ainsi les risques d'écoute clandestine.
   - **Gestion du trafic**: Réduit le trafic de diffusion en limitant son étendue.
