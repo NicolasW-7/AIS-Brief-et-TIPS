@@ -2,6 +2,10 @@
 
 Ce Tp sert de base pour récapituler les commandes ainsi que les aspects du réseau dans sa grande globalité.
 
+## *Plan de l'infrastructure PCT*
+
+![alt tag](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Screenshots/INFRA.png))
+
 Voici le découpage selon le modèle OSI de notre infra réseau ainsi que ce que nous verrons dans ce dossier "réseau"
 
 ### Plans de déploiement 
