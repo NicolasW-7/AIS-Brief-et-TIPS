@@ -3,6 +3,8 @@
 **Définition**: 
 Un VLAN (Virtual Local Area Network) est une technologie utilisée pour segmenter un réseau physique en plusieurs réseaux logiques distincts. Cette segmentation permet de regrouper des hôtes ayant des besoins similaires ou devant être isolés pour des raisons de sécurité ou de performance.
 
+![alt tag](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Screenshots/667934740591808512.png)
+
 **Fonctionnement**:
 - **Segmentation**: Les VLANs permettent de diviser un réseau en plusieurs sous-réseaux logiques. Chaque VLAN est un domaine de diffusion distinct.
 - **Isolation**: Les dispositifs dans un VLAN ne peuvent pas communiquer directement avec des dispositifs dans un autre VLAN sans un routeur ou un dispositif de couche 3.
