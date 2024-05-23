@@ -1,6 +1,6 @@
 # ***Réalisation d'un TP réseau via Packet Tracer***
 
-Ce Tp sert de base pour récapitulé les commandes ainsi que les aspects réseau dans sa grande globalité.
+Ce Tp sert de base pour récapituler les commandes ainsi que les aspects du réseau dans sa grande globalité.
 
 Voici le découpage selon le modèle OSI de notre infra réseau ainsi que ce que nous verrons dans ce dossier "réseau"
 
