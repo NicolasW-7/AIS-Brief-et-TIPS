@@ -3,7 +3,7 @@
 **Définition**: 
 Un VLAN (Virtual Local Area Network) est une technologie utilisée pour segmenter un réseau physique en plusieurs réseaux logiques distincts. Cette segmentation permet de regrouper des hôtes ayant des besoins similaires ou devant être isolés pour des raisons de sécurité ou de performance.
 
-![alt tag](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Screenshots/667934740591808512.png)
+
 
 **Fonctionnement**:
 - **Segmentation**: Les VLANs permettent de diviser un réseau en plusieurs sous-réseaux logiques. Chaque VLAN est un domaine de diffusion distinct.
@@ -18,6 +18,8 @@ Un VLAN (Virtual Local Area Network) est une technologie utilisée pour segmente
 
 **Définition**:
 Le VTP (VLAN Trunking Protocol) est un protocole propriétaire de Cisco utilisé pour gérer la propagation des informations de VLANs à travers un domaine de commutation.
+
+![alt tag](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Screenshots/667934740591808512.png)
 
 **Fonctionnement**:
 - **Propagation des VLANs**: VTP permet de créer, supprimer et renommer des VLANs sur un switch VTP server et de propager ces modifications automatiquement à tous les switches configurés en VTP client dans le domaine VTP.
