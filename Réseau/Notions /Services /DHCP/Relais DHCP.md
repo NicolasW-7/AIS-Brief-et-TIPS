@@ -30,7 +30,8 @@ Sur un routeur Cisco, la configuration pourrait ressembler à ceci :
 - **Flexibilité** : Permet l'utilisation d'un serveur DHCP centralisé pour gérer plusieurs sous-réseaux, simplifiant ainsi l'administration.
 - **Efficacité** : Réduit le besoin de déployer des serveurs DHCP sur chaque sous-réseau.
 - **Centralisation** : Facilite la gestion et la mise à jour des configurations DHCP à partir d'un emplacement centralisé.
-- 
+
+
 ## Inconvénients du DHCP Relay
 - **Complexité** : La configuration et la gestion peuvent être plus complexes, surtout dans de grands réseaux avec de nombreux sous-réseaux.
 - **Dépendance** : Si l'agent de relais ou le serveur DHCP centralisé tombe en panne, cela peut affecter la capacité des clients à obtenir des adresses IP.
