@@ -21,11 +21,6 @@ DHCP Relay (Relais DHCP) est une fonctionnalité de réseau permettant aux requ�
 ### Configuration de l'Agent de Relais DHCP
 Pour configurer un agent de relais DHCP sur un routeur ou un autre dispositif réseau, les administrateurs doivent spécifier l'adresse IP du serveur DHCP vers lequel les requêtes doivent être relayées. 
 
-### Exemple de Configuration
-Sur un routeur Cisco, la configuration pourrait ressembler à ceci :
-
-
-
 ## Avantages du DHCP Relay
 - **Flexibilité** : Permet l'utilisation d'un serveur DHCP centralisé pour gérer plusieurs sous-réseaux, simplifiant ainsi l'administration.
 - **Efficacité** : Réduit le besoin de déployer des serveurs DHCP sur chaque sous-réseau.
