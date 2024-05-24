@@ -28,7 +28,7 @@ Lorsque la sécurité des ports détecte une violation, elle peut prendre diffé
 - **Contrôle d'Accès** : Limite les périphériques pouvant se connecter à chaque port, renforçant ainsi la sécurité réseau.
 - **Prévention des Attaques** : Protège contre les attaques telles que le MAC flooding en limitant le nombre d'adresses MAC par port.
 - **Surveillance et Journalisation** : Enregistre les tentatives de connexion non autorisées, aidant à la détection des intrusions et au dépannage.
-- 
+
 ## Inconvénients de la Sécurité des Ports
 - **Gestion** : Peut nécessiter une gestion et une maintenance accrues, surtout dans les environnements à grande échelle où les périphériques se déplacent fréquemment.
 - **Disponibilité** : Les actions comme la désactivation des ports en cas de violation peuvent entraîner des interruptions de service si elles ne sont pas gérées correctement.
