@@ -8,7 +8,7 @@ On commence par éxecuter la commande :
 lsblk -a
 ````
 
-Celle-ci liste les disques et partition et permet de voir la lettre de notre disqe (sda,b,c). 
+Celle-ci liste les disques et partition et permet de voir la lettre de notre disque (sda,b,c). 
 
 **Dans le cas d'un disque de plus de 2To on ne peux utiliser fdisk car celui-ci limite les partions à 2To, on utilisera parted**
 
