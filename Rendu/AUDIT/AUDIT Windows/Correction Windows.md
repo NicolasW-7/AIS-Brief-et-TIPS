@@ -87,4 +87,4 @@
 
 ### **Preuve de fonctionnement** : 
 
-
+![alt tag]([https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Crypto/Screenshots/GLPI1.png](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Rendu/AUDIT/AUDIT%20Windows/playbook%20windows.png))
