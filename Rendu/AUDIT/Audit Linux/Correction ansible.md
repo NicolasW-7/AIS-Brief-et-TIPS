@@ -146,3 +146,5 @@
 
 
 ### Preuve de fonctionnement : 
+
+![alt tag](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Rendu/AUDIT/Audit%20Linux/playbook%20linux.png)
