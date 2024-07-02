@@ -33,4 +33,5 @@ R31# redistribute ospf 1 match internal external
 
 
 Notion OSPF : https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Notions%20/OSPF%20/OSPF.md
+
 Notion BGP : https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Notions%20/BGP/BGP.md
