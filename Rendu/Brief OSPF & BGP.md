@@ -15,7 +15,7 @@ R32# router-id 9.9.9.9
 R32# redistribute bgp 300 match internal external
 ````
 
-![alt tag]([https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Screenshots/bgp1.png)
+![alt tag](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Screenshots/bgp1.png)
 
 ##### Router pas bordure
 
@@ -29,7 +29,7 @@ R31# network 192.168.36.0 0.0.0.255 area 0
 R31# router bgp 300
 R31# redistribute ospf 1 match internal external
 ````
-![alt tag]([https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Screenshots/bgp2.png)
+![alt tag](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Screenshots/bgp2.png)
 
 
 Notion OSPF : https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/R%C3%A9seau/Notions%20/OSPF%20/OSPF.md
