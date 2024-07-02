@@ -29,6 +29,6 @@ arrivant dans le routeur par le port Fa1/0 et sortant par le port Fa0/1
 
 ![image](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/assets/146818596/82a4bc5d-e20d-4bba-94ef-51b57f310277)
 
-Idem pour les paquets arrivant par le port Fa0/0 depuis le poste G1 et sortant par le port Fa0/1
+- Idem pour les paquets arrivant par le port Fa0/0 depuis le poste G1 et sortant par le port Fa0/1
 
 ![image](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/assets/146818596/541ccb27-dbca-4855-826b-399508265547)
