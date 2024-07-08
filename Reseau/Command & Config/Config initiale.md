@@ -1,4 +1,4 @@
-# ***Configuration initiale***
+# **Configuration initiale**
 
 ````
         enable

@@ -6,6 +6,7 @@ OSPF (Open Shortest Path First) est un protocole de routage à état de liens ut
 ## Fonctionnement
 
 ### Architecture OSPF
+
 OSPF divise le réseau en zones logiques, facilitant la gestion et réduisant la charge de traitement :
 
 - **Zone Backbone (Zone 0)** : C'est la zone centrale à laquelle toutes les autres zones doivent se connecter.
