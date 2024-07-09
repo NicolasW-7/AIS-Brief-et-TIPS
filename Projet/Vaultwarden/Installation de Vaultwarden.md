@@ -209,7 +209,7 @@ Ce sont ces lignes qui activent la console d’administration :
 ```sh
 
       WEBSOCKET_ENABLED: true
-      ADMIN_TOKEN: randompassword40characters
+      ADMIN_TOKEN: YourAdminToken
 ```
 
 **Elles peuvent ne pas être ajouter, ou modifier pour masquer le Token (mots de passe) de la console admin.**
