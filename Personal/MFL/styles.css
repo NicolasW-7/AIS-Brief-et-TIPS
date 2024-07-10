@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    margin: 20px;
+}
+
+input[type="number"] {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+}
