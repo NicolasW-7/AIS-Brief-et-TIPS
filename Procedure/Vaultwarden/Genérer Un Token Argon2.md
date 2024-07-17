@@ -59,6 +59,6 @@ On peux alors reload nos containers avec un :
 docker compose up -d
 ```
 
-Et tester dans : https://mon.vaultwarden.mon.domaine/**admin**
+Et tester dans : https://mon.vaultwarden.mon.domaine/admin
 
 On entre le token entrer à lors de la création du token argon2
