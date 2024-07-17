@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       WEBSOCKET_ENABLED: true
-      ADMIN_TOKEN: cf. #GenererUnToken Argon2 #YourAdminToken
+      ADMIN_TOKEN: cf.  https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Procedure/Vaultwarden/Gen%C3%A9rer%20Un%20Token%20Argon2.md #YourAdminToken
       DOMAIN: "YourDomain" # Your domain; vaultwarden needs to know it's https to work properly with attachments
     volumes:
       - vw-data:/data
