@@ -13,6 +13,9 @@
 - Solution gratuite similaire a Bitwarden
 - Facile à déploiyer et a réinstaller
 
+**TimeLine**
+[TimeLine Projet](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Projet/Vaultwarden/TimeLine.md)
+
 **Procédure VaultWarden**
 - Installation : https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Procedure/Vaultwarden/Installation%20Procedure%20Vaultwarden%20on%20Docker.md
 - Script export database : https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Procedure/Vaultwarden/Script%20%26%20explanation.md
