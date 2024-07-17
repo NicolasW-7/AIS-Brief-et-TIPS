@@ -33,3 +33,4 @@
   - Création du présentation powerpoint
   - Test de compatibilité vers Linux pour Yubiker + Fonctionnement des clés.
 - 10 Juillet 2024 : Présentation du projet : Responsable des différents services + DSI + Tuteur de stage
+- 16 Juillet 2024 : Utilisation d'un token Argon2
