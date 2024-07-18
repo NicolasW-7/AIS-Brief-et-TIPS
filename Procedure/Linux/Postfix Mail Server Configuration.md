@@ -25,7 +25,7 @@ This document provides the configuration steps for setting up a Postfix mail ser
 Edit the Postfix main configuration file `/etc/postfix/main.cf`:
 
 ```ini
-# Configuration de base
+# Basic Configuration
 myhostname = mail.example.com
 mydomain = example.com
 myorigin = $mydomain
@@ -34,18 +34,18 @@ inet_protocols = ipv4
 mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 relayhost =
 
-# Réseaux de confiance
+# Trusted Networks
 mynetworks = 127.0.0.0/8, [::1]/128
 
-# Répertoire de boîte aux lettres
+# Mailbox Directory
 home_mailbox = Maildir/
 
-# Sécurité
+# Security
 smtpd_banner = $myhostname ESMTP $mail_name (Ubuntu)
 biff = no
 append_dot_mydomain = no
 
-# Paramètres TLS (si nécessaire)
+# TLS Settings (if necessary)
 # smtpd_tls_cert_file = /etc/ssl/certs/mail.example.com.crt
 # smtpd_tls_key_file = /etc/ssl/private/mail.example.com.key
 # smtpd_use_tls = yes
