@@ -64,8 +64,8 @@ sudo systemctl restart postfix
 Useful commands to test your Postfix configuration:
 
 ```sh
-echo "contenu du mail" | mail -s "sujet du mail" adresse@Mail
-echo  "contenu du mail" | mutt -s "sujet du mail" -a /fichier/a/envoyer -- adresse@Mail
+echo "email content" | mail -s "email subject" address@mail
+echo "email content" | mutt -s "email subject" -a /path/to/attachment -- address@mail
 ```
 
 Check your target email address; if you receive the email, you have successfully configured your self-hosted mail server. 
