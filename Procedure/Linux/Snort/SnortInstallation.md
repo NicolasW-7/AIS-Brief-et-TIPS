@@ -6,8 +6,8 @@
 
 Assurez-vous que votre système est à jour :
 ```bash
-sudo apt update
-sudo apt upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
 ```
 ## Étape 2 : Installer les dépendances requises
 
