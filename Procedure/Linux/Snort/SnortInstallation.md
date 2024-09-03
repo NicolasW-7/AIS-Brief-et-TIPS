@@ -70,7 +70,7 @@ cd snort3
 Générer les fichiers de configuration :
 
 ```bash
-./configure_cmake.sh --prefix=/usr/local
+./configure_cmake.sh
 ```
 
 Construire et installer Snort3 :
