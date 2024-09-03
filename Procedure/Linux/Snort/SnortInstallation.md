@@ -85,7 +85,8 @@ sudo make install
 Pour vérifier que Snort3 est installé correctement, utilisez la commande suivante :
 
 ```bash
-/usr/local/bin/snort -V
+cd /usr/local/snort/bin
+./snort -V
 ```
 
 Après avoir suivi ces étapes, Snort3 devrait être entièrement installé avec toutes ses dépendances et utilitaires. Vous pouvez maintenant configurer Snort selon vos besoins en matière de sécurité réseau.
