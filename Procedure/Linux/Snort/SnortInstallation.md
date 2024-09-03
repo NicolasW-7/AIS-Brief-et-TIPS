@@ -21,10 +21,15 @@ libmnl-dev ethtool libjemalloc-dev
 ```
 ## Étape 3 : Installation de DAQ
 
+```
+mkdir snort
+cd /snort
+```
+
 Installer DAQ :
 
 ```bash
-git clone https://github.com/snort3/libdaq.git
+sudo git clone https://github.com/snort3/libdaq.git
 cd libdaq
 ```
 
@@ -38,7 +43,7 @@ sudo apt-get install -y autoconf automake libtool
 Réexécutez le script bootstrap :
 
 ```bash
-./bootstrap
+sudo ./bootstrap
 ```
 
 Vérifiez les erreurs lors de l'exécution de bootstrap : Si des erreurs apparaissent, consultez les messages d'erreur pour identifier les dépendances manquantes.
@@ -62,7 +67,7 @@ sudo make install
 Cloner le dépôt Snort3 :
 
 ```bash
-
+cd ..
 git clone https://github.com/snort3/snort3.git
 cd snort3
 ```
