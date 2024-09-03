@@ -88,12 +88,4 @@ Pour vérifier que Snort3 est installé correctement, utilisez la commande suiva
 /usr/local/bin/snort -V
 ```
 
-## Étape 5 : Installer des utilitaires supplémentaires (optionnel)
-
-Installer LuaJIT (requis pour la configuration de Snort) :
-
-```bash
-sudo apt install -y luajit libluajit-5.1-dev
-```
-
 Après avoir suivi ces étapes, Snort3 devrait être entièrement installé avec toutes ses dépendances et utilitaires. Vous pouvez maintenant configurer Snort selon vos besoins en matière de sécurité réseau.
