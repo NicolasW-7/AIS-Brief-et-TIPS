@@ -23,7 +23,7 @@ Nextcloud
 2. Installez les paquets nécessaires :
 
     ```
-    sudo apt-get install ca-certificates curl gnupg
+    sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
     ```
 
 3. Créez le répertoire pour les clés de dépôt :
@@ -35,7 +35,7 @@ Nextcloud
 4. Téléchargez et ajoutez la clé GPG de Docker :
 
     ```
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
     ```
 
 5. Changez les permissions de la clé GPG :
@@ -47,7 +47,7 @@ Nextcloud
 6. Ajoutez le dépôt Docker à la liste des sources APT :
 
     ```
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo $VERSION_CODENAME) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    sudo sh -c "echo 'deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable' > /etc/apt/sources.list.d/docker.list"
     ```
 
 7. Mettez à jour la liste des paquets pour inclure le dépôt Docker :
