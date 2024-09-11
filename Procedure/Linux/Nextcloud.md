@@ -1,4 +1,4 @@
-# NEXTCloud sur Debian
+# NextCloud sur Debian
 **Support Nextcloud** : https://github.com/nextcloud
 
 # Qu'est-ce que Nextcloud ?
