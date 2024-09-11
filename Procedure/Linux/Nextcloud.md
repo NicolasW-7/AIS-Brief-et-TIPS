@@ -1,37 +1,27 @@
 # NEXTCloud sur Debian
+**Support Nextcloud** : https://github.com/nextcloud
 
-## Qu'est-ce que Nextcloud ?
+# Qu'est-ce que Nextcloud ?
 
 **Nextcloud** est une plateforme open-source pour le stockage et la collaboration en ligne, offrant une solution complète pour la gestion des fichiers et la collaboration en équipe. Voici un aperçu de ses principales fonctionnalités :
 
-## Stockage de Fichiers
-
-- **Gestion des fichiers** : Stockez, synchronisez et partagez vos fichiers en toute sécurité.
-- **Partage** : Contrôlez qui peut accéder à vos fichiers et comment ils peuvent les utiliser.
-
-## Collaboration
-
-- **Calendriers partagés** : Gérez et partagez des calendriers avec vos collègues.
-- **Contacts** : Centralisez vos contacts et partagez-les facilement.
-- **Applications intégrées** : Utilisez des outils pour la gestion des tâches et des projets.
-
-## Sécurité et Confidentialité
-
-- **Chiffrement** : Protégez vos données avec des fonctionnalités de chiffrement.
-- **Contrôles d'accès** : Définissez des règles précises pour l'accès aux fichiers et aux données.
-- **Politique de sécurité** : Configurez des politiques de sécurité adaptées à vos besoins.
-
-## Extensibilité
-
-- **Applications supplémentaires** : Étendez les fonctionnalités de Nextcloud avec des applications tierces.
-- **Intégrations** : Connectez Nextcloud à d'autres outils et services selon vos besoins.
-
-## Déploiement
-
-- **Installation** : Déployez Nextcloud sur des serveurs personnels ou professionnels.
-- **Contrôle local** : Gardez le contrôle total de vos données avec un déploiement local.
+| **Catégorie**             | **Fonctionnalités**                                                                                     |
+|---------------------------|---------------------------------------------------------------------------------------------------------|
+| **Stockage de Fichiers**  | - **Gestion des fichiers** : Stockez, synchronisez et partagez vos fichiers en toute sécurité.         |
+|                           | - **Partage** : Contrôlez qui peut accéder à vos fichiers et comment ils peuvent les utiliser.         |
+| **Collaboration**         | - **Calendriers partagés** : Gérez et partagez des calendriers avec vos collègues.                     |
+|                           | - **Contacts** : Centralisez vos contacts et partagez-les facilement.                                 |
+|                           | - **Applications intégrées** : Utilisez des outils pour la gestion des tâches et des projets.           |
+| **Sécurité et Confidentialité** | - **Chiffrement** : Protégez vos données avec des fonctionnalités de chiffrement.                 |
+|                           | - **Contrôles d'accès** : Définissez des règles précises pour l'accès aux fichiers et aux données.     |
+|                           | - **Politique de sécurité** : Configurez des politiques de sécurité adaptées à vos besoins.            |
+| **Extensibilité**         | - **Applications supplémentaires** : Étendez les fonctionnalités de Nextcloud avec des applications tierces. |
+|                           | - **Intégrations** : Connectez Nextcloud à d'autres outils et services selon vos besoins.              |
+| **Déploiement**           | - **Installation** : Déployez Nextcloud sur des serveurs personnels ou professionnels.                 |
+|                           | - **Contrôle local** : Gardez le contrôle total de vos données avec un déploiement local.              |
 
 En résumé, Nextcloud est une solution flexible et sécurisée pour la gestion et le partage de fichiers, adaptée aussi bien pour un usage personnel que professionnel.
+
 
 
 
