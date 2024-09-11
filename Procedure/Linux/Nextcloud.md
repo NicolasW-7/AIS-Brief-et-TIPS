@@ -1,5 +1,38 @@
 # NEXTCloud sur Debian
 
+## Qu'est-ce que Nextcloud ?
+
+**Nextcloud** est une plateforme open-source pour le stockage et la collaboration en ligne, offrant une solution complète pour la gestion des fichiers et la collaboration en équipe. Voici un aperçu de ses principales fonctionnalités :
+
+## Stockage de Fichiers
+
+- **Gestion des fichiers** : Stockez, synchronisez et partagez vos fichiers en toute sécurité.
+- **Partage** : Contrôlez qui peut accéder à vos fichiers et comment ils peuvent les utiliser.
+
+## Collaboration
+
+- **Calendriers partagés** : Gérez et partagez des calendriers avec vos collègues.
+- **Contacts** : Centralisez vos contacts et partagez-les facilement.
+- **Applications intégrées** : Utilisez des outils pour la gestion des tâches et des projets.
+
+## Sécurité et Confidentialité
+
+- **Chiffrement** : Protégez vos données avec des fonctionnalités de chiffrement.
+- **Contrôles d'accès** : Définissez des règles précises pour l'accès aux fichiers et aux données.
+- **Politique de sécurité** : Configurez des politiques de sécurité adaptées à vos besoins.
+
+## Extensibilité
+
+- **Applications supplémentaires** : Étendez les fonctionnalités de Nextcloud avec des applications tierces.
+- **Intégrations** : Connectez Nextcloud à d'autres outils et services selon vos besoins.
+
+## Déploiement
+
+- **Installation** : Déployez Nextcloud sur des serveurs personnels ou professionnels.
+- **Contrôle local** : Gardez le contrôle total de vos données avec un déploiement local.
+
+En résumé, Nextcloud est une solution flexible et sécurisée pour la gestion et le partage de fichiers, adaptée aussi bien pour un usage personnel que professionnel.
+
 
 
 ## Prérequis
@@ -7,27 +40,9 @@
 - **Serveur** : Serveur physique ou virtuel avec :
   - **CPU** : 2 cœurs minimum
   - **RAM** : 4 Go minimum
-  - **Stockage** : Prévoir suffisamment d'espace pour vos données (1 To ou plus recommandé) Prévoir le RAID à utiliser si besoin (cf.ci-dessous).
+  - **Stockage** : Prévoir suffisamment d'espace pour vos données (1 To ou plus recommandé) Prévoir le RAID à utiliser si besoin (cf.#Bonus en bas de page).
 - **Système d'exploitation** : Linux (Ubuntu 22.04, Debian 11, CentOS, etc.)
 - **Accès administrateur** : Root ou utilisateur avec privilèges `sudo`.
-
-### Tableau RAID
-
-| Type de RAID | Nombre de disques | Défaillances de disques tolérables | Description | Capacité de stockage |
-|--------------|-------------------|------------------------------------|-------------|-----------------------|
-| SHR          | 1                 | 0                                  | Optimise la taille du volume lorsque des disques de différentes tailles sont associés. Fournit la redondance des données si le volume est composé de deux disques ou plus. Recommandé pour les utilisateurs débutants. | 1 x (taille du disque) |
-|              | 2-3               | 1                                  | Optimisé par le système. |                   |
-|              | ≧4                | 1-2                                |             |                       |
-| Basic        | 1                 | 0                                  | Composé d'un disque en tant qu'unité indépendante. Ne dispose pas de la redondance des données. | 1 x (taille du disque) |
-| JBOD         | ≧1                | 0                                  | Combine une collection de disques en un espace de stockage unique avec une capacité égale à la somme des capacités des disques. Ne dispose pas de la redondance des données. | Somme des tailles de tous les disques |
-| RAID 0       | ≧2                | 0                                  | Propose « l'agrégation par bandes », un processus consistant à diviser les données en blocs et à répartir ces blocs sur plusieurs disques pour améliorer les performances. Ne dispose pas de la redondance des données. | Somme des tailles de tous les disques |
-| RAID 1       | 2                 | 1                                  | Écrit des données identiques sur tous les disques simultanément. Fournit la redondance des données. | Taille du plus petit disque |
-|              | 3                 | 2                                  |             |                       |
-|              | 4                 | 3                                  |             |                       |
-| RAID 5       | ≧3                | 1                                  | Met en œuvre l'agrégation par bandes au niveau des blocs, avec la parité des données distribuée sur tous les disques membres, fournissant ainsi une redondance des données plus efficace que RAID 1. | (N - 1) x (taille du plus petit disque) |
-| RAID 6       | ≧4                | 2                                  | Implémente deux couches de parité de données pour stocker des données redondantes de la taille de deux disques, fournissant un degré supérieur de redondance des données par rapport à RAID 5. Prend en charge la création d'un volume Btrfs d'une taille maximale de 1 Po, disponible uniquement sur certains modèles de Synology NAS et dans des conditions spécifiques. | (N - 2) x (taille du plus petit disque) |
-| RAID 10      | ≧4 (nombre pair)  | 0                                  | Fournit la performance de RAID 0 et le niveau de protection des données de RAID 1, combinant les disques en groupes de deux dans lesquels les données sont dupliquées en miroir. | (N / 2) x (taille du plus petit disque) |
-| RAID F1       | ≧3                | 1                                  | Implémente l'agrégation par bandes au niveau des blocs, avec la parité des données distribuée sur tous les disques membres. Écrit davantage d'informations de parité sur un certain disque. Recommandé pour les matrices exclusivement en flash. | (N - 1) x (taille du plus petit SSD) |
 
 ## Installation de Nextcloud
 
@@ -319,3 +334,21 @@ sudo ufw enable
 
 ## Conclusions 
 Votre installation de Nextcloud est maintenant terminée et devrait être opérationnelle. Si vous avez des questions supplémentaires ou rencontrez des problèmes, n'hésitez pas à envoyer des demandes sur mon dépôt GitHub. Je serai ravi de vous aider !
+
+### Bonus Tableau RAID
+
+| Type de RAID | Nombre de disques | Défaillances de disques tolérables | Description | Capacité de stockage |
+|--------------|-------------------|------------------------------------|-------------|-----------------------|
+| SHR          | 1                 | 0                                  | Optimise la taille du volume lorsque des disques de différentes tailles sont associés. Fournit la redondance des données si le volume est composé de deux disques ou plus. Recommandé pour les utilisateurs débutants. | 1 x (taille du disque) |
+|              | 2-3               | 1                                  | Optimisé par le système. |                   |
+|              | ≧4                | 1-2                                |             |                       |
+| Basic        | 1                 | 0                                  | Composé d'un disque en tant qu'unité indépendante. Ne dispose pas de la redondance des données. | 1 x (taille du disque) |
+| JBOD         | ≧1                | 0                                  | Combine une collection de disques en un espace de stockage unique avec une capacité égale à la somme des capacités des disques. Ne dispose pas de la redondance des données. | Somme des tailles de tous les disques |
+| RAID 0       | ≧2                | 0                                  | Propose « l'agrégation par bandes », un processus consistant à diviser les données en blocs et à répartir ces blocs sur plusieurs disques pour améliorer les performances. Ne dispose pas de la redondance des données. | Somme des tailles de tous les disques |
+| RAID 1       | 2                 | 1                                  | Écrit des données identiques sur tous les disques simultanément. Fournit la redondance des données. | Taille du plus petit disque |
+|              | 3                 | 2                                  |             |                       |
+|              | 4                 | 3                                  |             |                       |
+| RAID 5       | ≧3                | 1                                  | Met en œuvre l'agrégation par bandes au niveau des blocs, avec la parité des données distribuée sur tous les disques membres, fournissant ainsi une redondance des données plus efficace que RAID 1. | (N - 1) x (taille du plus petit disque) |
+| RAID 6       | ≧4                | 2                                  | Implémente deux couches de parité de données pour stocker des données redondantes de la taille de deux disques, fournissant un degré supérieur de redondance des données par rapport à RAID 5. Prend en charge la création d'un volume Btrfs d'une taille maximale de 1 Po, disponible uniquement sur certains modèles de Synology NAS et dans des conditions spécifiques. | (N - 2) x (taille du plus petit disque) |
+| RAID 10      | ≧4 (nombre pair)  | 0                                  | Fournit la performance de RAID 0 et le niveau de protection des données de RAID 1, combinant les disques en groupes de deux dans lesquels les données sont dupliquées en miroir. | (N / 2) x (taille du plus petit disque) |
+| RAID F1       | ≧3                | 1                                  | Implémente l'agrégation par bandes au niveau des blocs, avec la parité des données distribuée sur tous les disques membres. Écrit davantage d'informations de parité sur un certain disque. Recommandé pour les matrices exclusivement en flash. | (N - 1) x (taille du plus petit SSD) |
