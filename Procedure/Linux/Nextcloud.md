@@ -352,3 +352,52 @@ Votre installation de Nextcloud est maintenant terminée et devrait être opéra
 | RAID 6       | ≧4                | 2                                  | Implémente deux couches de parité de données pour stocker des données redondantes de la taille de deux disques, fournissant un degré supérieur de redondance des données par rapport à RAID 5. Prend en charge la création d'un volume Btrfs d'une taille maximale de 1 Po, disponible uniquement sur certains modèles de Synology NAS et dans des conditions spécifiques. | (N - 2) x (taille du plus petit disque) |
 | RAID 10      | ≧4 (nombre pair)  | 0                                  | Fournit la performance de RAID 0 et le niveau de protection des données de RAID 1, combinant les disques en groupes de deux dans lesquels les données sont dupliquées en miroir. | (N / 2) x (taille du plus petit disque) |
 | RAID F1       | ≧3                | 1                                  | Implémente l'agrégation par bandes au niveau des blocs, avec la parité des données distribuée sur tous les disques membres. Écrit davantage d'informations de parité sur un certain disque. Recommandé pour les matrices exclusivement en flash. | (N - 1) x (taille du plus petit SSD) |
+
+## Glossaire
+
+### Apache
+
+**Description** : Serveur web open-source qui fournit des fonctionnalités robustes pour servir des pages web. Apache est souvent utilisé pour héberger des sites web dynamiques, comme Nextcloud.
+
+**Commandes clés** : `a2enmod`, `a2dismod`, `a2ensite`, `a2dissite`
+
+### PHP
+
+**Description** : Langage de script open-source principalement utilisé pour le développement web côté serveur. PHP est essentiel pour exécuter des scripts sur le serveur web, comme ceux utilisés par Nextcloud.
+
+**Commandes clés** : `php -v`, `php.ini`, `php-fpm`
+
+### MariaDB
+
+**Description** : Système de gestion de base de données relationnelle open-source, utilisé comme alternative à MySQL. MariaDB est utilisé pour stocker les données de Nextcloud.
+
+**Commandes clés** : `mysql`, `mysql_secure_installation`, `CREATE DATABASE`, `GRANT PRIVILEGES`
+
+### RAID
+
+**Description** : Technologie qui permet de combiner plusieurs disques durs en un seul volume logique pour améliorer les performances ou la redondance des données. RAID peut être configuré de différentes manières pour atteindre des objectifs spécifiques.
+
+
+### PHP-FPM (FastCGI Process Manager)
+
+**Description** : Alternative à l'exécution de PHP via le module mod_php dans Apache. PHP-FPM gère les processus PHP de manière plus efficace, ce qui est souvent utilisé avec des configurations à haute charge.
+
+### SSL (Secure Sockets Layer)
+
+**Description** : Protocole de sécurité pour chiffrer les données échangées entre un serveur web et un client, garantissant la confidentialité et l'intégrité des informations. Utilisé pour sécuriser les connexions HTTPS.
+
+### UFW (Uncomplicated Firewall)
+
+**Description** : Interface pour gérer le pare-feu sur les systèmes Ubuntu et Debian. Permet de configurer les règles de filtrage de manière simple.
+
+### Nextcloud
+
+**Description** : Plateforme open-source pour la gestion de fichiers, le stockage et la collaboration en ligne. Permet de stocker, synchroniser et partager des fichiers ainsi que de collaborer avec des outils intégrés comme des calendriers et des contacts.
+
+### Debian
+
+**Description** : Distribution Linux stable et largement utilisée, connue pour sa robustesse et sa flexibilité. Debian est souvent le choix préféré pour les serveurs.
+
+### SSH (Secure Shell)
+
+**Description** : Protocole de communication sécurisé pour accéder à des serveurs à distance. Utilisé pour les connexions sécurisées en ligne de commande.
