@@ -32,7 +32,7 @@ A Debian machine virtual or physique; *the method works on multiple distribution
 4. Download and add the Docker GPG key:
 
     ```sh
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
     ```
 
 5. Change the permissions of the GPG key:
@@ -44,7 +44,7 @@ A Debian machine virtual or physique; *the method works on multiple distribution
 6. Add the Docker repository to the APT sources list:
 
     ```sh
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo $VERSION_CODENAME) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     ```
 
 7. Update the package list to include the Docker repository:
@@ -57,7 +57,7 @@ A Debian machine virtual or physique; *the method works on multiple distribution
 
     ```sh
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-    ```
+      ```
 
 ### Verify Docker Installation
 
